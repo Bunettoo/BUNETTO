@@ -38,7 +38,7 @@
         let allProducts = [];
         
         let cart = [];
-        const WHATSAPP_NUMBER = "923000000000"; // TODO: Replace with your WhatsApp number (country code + number, no +)
+        const WHATSAPP_NUMBER = "923320339403"; // TODO: Replace with your WhatsApp number (country code + number, no +)
 
         // --- DYNAMIC LAYOUT CONFIG ---
         let categoryConfig;
