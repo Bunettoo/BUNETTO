@@ -527,15 +527,6 @@
                     </div>
                 `;
             });
-
-                if (orderType === 'delivery') {
-                    deliveryFee = 150;
-                    deliveryFeeRow.classList.remove('hidden');
-                } else {
-                    deliveryFeeRow.classList.add('hidden');
-                }
-
-                total += deliveryFee;
                 totalEl.textContent = `Rs. ${total}`;
             }
             syncCartButtons();
@@ -579,10 +570,6 @@
                     message += `  └─ ${ex.qty * item.qty}x ${ex.name} (+Rs. ${ex.price * ex.qty * item.qty})\n`;
                 });
             });
-
-            if (orderType === 'delivery') {
-                message += `▪ Delivery Fee - Rs. 150\n`;
-                total += 150;
             }
 
             message += `\n*Total Amount: Rs. ${total}*\n\n`;
