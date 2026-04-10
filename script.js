@@ -570,7 +570,7 @@
                     message += `  └─ ${ex.qty * item.qty}x ${ex.name} (+Rs. ${ex.price * ex.qty * item.qty})\n`;
                 });
             });
-            }
+            
 
             message += `\n*Total Amount: Rs. ${total}*\n\n`;
             
